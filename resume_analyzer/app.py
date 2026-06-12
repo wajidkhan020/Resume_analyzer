@@ -500,7 +500,6 @@ st.markdown('<div class="content-wrap">', unsafe_allow_html=True)
 col_upload, col_jd = st.columns([1, 1], gap="large")
 
 with col_upload:
-    st.markdown('<div class="card">', unsafe_allow_html=True)
     st.markdown('<div class="card-title">📄 Resume (PDF)</div>', unsafe_allow_html=True)
     uploaded_file = st.file_uploader(
         label="Drop your PDF here",
@@ -518,7 +517,6 @@ with col_upload:
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col_jd:
-    st.markdown('<div class="card">', unsafe_allow_html=True)
     st.markdown('<div class="card-title">🎯 Job Description (Optional)</div>', unsafe_allow_html=True)
     job_description = st.text_area(
         "Paste job description",
