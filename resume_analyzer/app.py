@@ -637,11 +637,11 @@ if st.session_state.analyzed and st.session_state.analysis:
         with s2:
             missing = analysis.get("missing_skills", [])
             st.markdown('<div class="card"><div class="card-title">❌ Missing Skills</div>', unsafe_allow_html=True)
-            if missing:
-                st.markdown(tags_html(missing, "tag-miss"), unsafe_allow_html=True)
-            else:
-                st.markdown("<p style='color:#0E9E6B;font-size:0.875rem;font-weight:500'>No critical gaps found.</p>", unsafe_allow_html=True)
-            st.markdown("</div>", unsafe_allow_html=True)
+            # if missing:
+            #     st.markdown(tags_html(missing, "tag-miss"), unsafe_allow_html=True)
+            # else:
+            #     st.markdown("<p style='color:#0E9E6B;font-size:0.875rem;font-weight:500'>No critical gaps found.</p>", unsafe_allow_html=True)
+            # st.markdown("</div>", unsafe_allow_html=True)
 
             categories = ["Technical", "Communication", "Leadership", "Problem Solving", "ATS Fit"]
             t = min(len(tech), 10)
